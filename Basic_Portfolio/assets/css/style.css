@@ -154,6 +154,22 @@ nav{
     font-size: 28px;
     cursor: pointer;
 }
+.active-link {
+    position: relative;
+    color: #1e9fab;
+    transition: 0.3;
+  }
+  .active-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: #1e9fab;
+    border-radius: 50%;
+  }
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
     padding-inline: 10vw;
