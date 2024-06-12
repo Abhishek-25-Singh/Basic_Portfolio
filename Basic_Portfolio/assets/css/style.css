@@ -77,7 +77,29 @@ i{
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
+    position: relative;
+    background-color: #fafafa;
 }
+a {
+    color: var(--text-color-third) !important;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  /* .nav_menu_list li a {
+    color: var(--text-color-second);
+  } */
+  
+  a:hover {
+    color: #1e9fab;
+  }
+  
+  a:visited {
+    color: var(--text-color-third) !important;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
 .container{
     width: 100%;
     position: relative;
