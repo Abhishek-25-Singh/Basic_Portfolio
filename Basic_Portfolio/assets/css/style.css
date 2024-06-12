@@ -7,12 +7,12 @@
 	--color-white: rgb(255, 255, 255);
 
 	--text-color-second: rgb(68, 68, 68);
-	--text-color-third: rgb(30, 159, 171);
+	--text-color-third: #1e9fab;
 
 	--first-color: rgb(110, 87, 224);
-	--first-color-hover: rgb(40, 91, 212);
+	--first-color-hover: rgb(80, 150, 203);
 
-	--second-color: rgb(0, 201, 255);
+	--second-color: #00c9ff;
 	--third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
@@ -72,7 +72,7 @@ html{
 
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
-    font-size: 15px;
+    font-size: 16px;
 }
 /* ------- BASE -------- */
 body{
@@ -80,6 +80,7 @@ body{
     position: relative;
     background-color: #fafafa;
 }
+
 a {
     color: var(--text-color-third) !important;
     background-color: transparent;
@@ -103,7 +104,9 @@ a {
 .container{
     width: 100%;
     position: relative;
+    background-color: #fafafa;
 }
+
 
 /* ----- NAVIGATION BAR ----- */
 nav{
@@ -121,7 +124,14 @@ nav{
 .nav-logo{
 	position: relative;
  }
- .nav-name{
+ .nav-logo img {
+    height: 88px;
+    width: 80px;
+    margin-top: 7px;
+    
+    
+  }
+ .nav-name {
     font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
@@ -133,7 +143,8 @@ nav{
     font-size: 5em;
     color: var(--text-color-second);
 }
-.nav-menu, .nav_menu_list{
+.nav-menu,
+ .nav_menu_list{
     display: flex;
 }
 .nav-menu .nav_list{
@@ -202,7 +213,7 @@ nav{
     border-radius: 5px;
 }
 .featured-name{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 600;
     color: var(--text-color-second);
     margin-block: 20px;
@@ -331,7 +342,7 @@ h3{
 .about-info{
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     padding-block: 30px 70px;
     padding-inline: 20px;
@@ -378,6 +389,7 @@ h3{
     border-radius: 5px;
 }
 /* ----- PROJECTS BOX ----- */
+
 .work .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -457,8 +469,6 @@ h3{
   .work .desc .btns .btn:hover {
     background: #171717;
   }
-
-
 
 
 /* ----- CONTACT BOX ----- */
