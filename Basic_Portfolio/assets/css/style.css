@@ -378,55 +378,87 @@ h3{
     border-radius: 5px;
 }
 /* ----- PROJECTS BOX ----- */
-.project-container{
+.work .box-container {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 20px;
     flex-wrap: wrap;
-}
-.project-box{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 30%;
-    height: 250px;
-    background: var(--color-white);
-    border-radius: 20px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-    overflow: hidden;
-}
-.project-box>i{
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
-}
-.project-box label{
-    font-size: 15px;
-    color: #777;
-}
-.project-box::after, .contact-info::after{
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    background: var(--second-color);
+    gap: 1.5rem;
+    margin: auto;
     width: 100%;
+  }
+  .work .box-container .box {
+    flex: 1 1 20rem;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
+    background-color: white;
+  }
+  .work .box-container .box img {
     height: 100%;
-    transition: .4s;
-    z-index: 1;
-}
-.project-box:hover.project-box::after,
-.contact-info:hover.contact-info::after{
-    bottom: 0;
-}
-.project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label{
-    color: var(--color-white);
-    z-index: 2;
-}
+    width: 100%;
+    object-fit: cover;
+  }
+  .work .box-container .box .content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+  }
+  .work .box-container .box .content .tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    background: #1dc4ee;
+    color: white;
+  }
+  .work .box-container .box .content .tag h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .work .box-container .box:hover .content {
+    top: 25%;
+    transition: all 0.5s;
+  }
+  .work .desc {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .work .desc p {
+    font-size: 1rem;
+  }
+  .work .desc .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .work .desc .btns .btn {
+    line-height: 0;
+    display: inline;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: rgb(36, 36, 36);
+    margin-right: 2rem;
+  }
+  .work .desc .btns .btn:hover {
+    background: #171717;
+  }
+
+
 
 
 /* ----- CONTACT BOX ----- */
