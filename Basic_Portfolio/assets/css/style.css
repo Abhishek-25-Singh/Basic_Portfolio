@@ -46,7 +46,10 @@ html{
 ::-webkit-scrollbar-thumb:hover{
     background: #bbb;
 }
-
+.about-btn {
+    margin-left: auto;
+    /* margin-top: px; */
+  }
 /* ---##-- REUSABLE CSS --##--- */
 
 /* ----- GLOBAL BUTTON DESIGN ----- */
